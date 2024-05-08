@@ -1,14 +1,27 @@
+import './index.css';
 import Container from './Container/Container';
-import './App.css'
+import Header from './Header/Header.jsx';
+import Button from './ButtonModal/ButtonModal'
+import Submit from './Submit/Submit'
 
-function App() {
-  return(
-  <>
-  <Container>
-   <ContainerModal TextModal={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod harum nobis eos architecto, saepe aspernatur! Magnam veniam eaque quos animi unde cum quidem perspiciatis, id deserunt neque iste error nam."} TextBtn={"What is front end mentor, and how it will help me?"}/>
-  </Container>
-  </>
-  )
+const App = () => {
+    
+    return (
+        <>
+            <Container>
+                <Header />
+                <p>Please let us know how we did with your support request. All feedback is apreciated to help us improve our oferring!</p>
+                <div className='rated'>
+                <Button nome={1}></Button>
+                <Button nome={2}></Button>
+                <Button nome={3}></Button>
+                <Button nome={4}></Button>
+                <Button nome={5}></Button>
+                </div>
+                <Submit/>
+            </Container>    
+        </>
+    )
 }
 
-export default App
+export default App;

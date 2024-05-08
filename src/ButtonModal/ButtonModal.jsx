@@ -1,7 +1,7 @@
 const Button = ({nome, modal, setModal}) => {
     return (
         <>
-            <button className="Button" onClick={() => setModal(!modal)}><p>{nome}</p></button>
+            <button className="Button" onClick><p>{nome}</p></button>
         </>
     )
 }
